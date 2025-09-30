@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiny App Portfolio Hub</title>
+    <!-- Load Tailwind CSS for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import for better aesthetics */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+
+    <!-- Main Container Card -->
+    <div class="w-full max-w-2xl bg-white shadow-xl rounded-2xl p-8 md:p-12 text-center border border-gray-100">
+
+        <!-- Header Content -->
+        <h1 class="text-4xl md:text-5xl font-extrabold text-indigo-700 mb-3">
+            Dashboard Pendanaan/Kredit UMKM
+        </h1>
+        <p class="text-lg text-gray-600 mb-10">
+            Silakan pilih menu di bawah ini untuk memulai. Masing-masing menu memiliki sumber data berbeda.
+			Select an application below to get started. These apps are deployed via shinyapps.io.
+        </p>
+
+        <!-- Buttons Grid -->
+        <div class="flex flex-col space-y-6 md:space-y-0 md:flex-row md:space-x-6 justify-center">
+
+            <!-- Button 1: First Shiny App -->
+            <!-- IMPORTANT: Replace the 'href' value below with the actual URL of your first Shiny app. -->
+            <a href="https://your-shiny-account.shinyapps.io/app-name-1/" target="_blank" rel="noopener noreferrer" 
+               class="flex-1 px-8 py-4 bg-indigo-600 text-white font-semibold text-xl rounded-xl shadow-lg 
+                      hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:scale-[1.02] 
+                      focus:outline-none focus:ring-4 focus:ring-indigo-300">
+                <span class="block">📊 Dashboard 1: Jangkauan Kredit </span>
+                <span class="block text-sm font-normal opacity-90 mt-1">
+                    (Sumber Data Susenas)
+                </span>
+            </a>
+
+            <!-- Button 2: Second Shiny App -->
+            <!-- IMPORTANT: Replace the 'href' value below with the actual URL of your second Shiny app. -->
+            <a href="https://your-shiny-account.shinyapps.io/app-name-2/" target="_blank" rel="noopener noreferrer" 
+               class="flex-1 px-8 py-4 bg-teal-600 text-white font-semibold text-xl rounded-xl shadow-lg 
+                      hover:bg-teal-700 transition duration-300 ease-in-out transform hover:scale-[1.02] 
+                      focus:outline-none focus:ring-4 focus:ring-teal-300">
+                <span class="block">📈 Dashboard 2: Nilai Kredit </span>
+                <span class="block text-sm font-normal opacity-90 mt-1">
+                    (Sumber Data SSKI BI)
+                </span>
+            </a>
+            
+        </div>
+        
+        <!-- Footer / Credits -->
+        <p class="mt-12 text-sm text-gray-400">
+            A simple hub powered by GitHub Pages.
+        </p>
+
+    </div>
+
+</body>
+</html>
